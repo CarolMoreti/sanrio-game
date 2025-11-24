@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Game — Hello Kitty & Friends</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TELA INICIAL -->
+  <div id="start-screen">
+    <div class="start-box">
+      <h1>🎀 Hello Kitty & Friends Memory Game 🎀</h1>
+      <p>Escolha a dificuldade:</p>
+
+      <button class="btn-level" data-size="4">✨ Fácil (4x4)</button>
+      <button class="btn-level" data-size="5">💖 Médio (5x5)</button>
+      <button class="btn-level" data-size="6">🌟 Difícil (6x6)</button>
+    </div>
+  </div>
+
+  <!-- TABULEIRO -->
+  <div id="game-screen" class="hidden">
+    <h2 id="title-level"></h2>
+    <button id="btn-back">⬅ Voltar</button>
+
+    <div id="board"></div>
+  </div>
+  <div id="winAnimation" class="hidden">
+  <div class="confetti"></div>
+  <h1>🎉 Parabéns! 🎉</h1>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
